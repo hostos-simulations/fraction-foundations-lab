@@ -15,14 +15,18 @@ Students can:
 The interface uses Hostos Community College colors and typography and is
 designed to support WCAG 2.2 Level AA conformance efforts.
 
+## Live application
+
+[Open Fraction Foundations Lab](https://hostos-simulations.github.io/fraction-foundations-lab/)
+
 ## Project credits
 
-**Concept and mathematical direction**  
-Professor Olen Dias  
+**Concept and mathematical direction**<br>
+Professor Olen Dias<br>
 Mathematics Department, Hostos Community College
 
-**Learning technology and technical support**  
-Ana Marjanovic  
+**Learning technology and technical support**<br>
+Ana Marjanovic<br>
 LMS Administrator and Instructional Designer, Office of Educational
 Technology, Hostos Community College
 
@@ -35,7 +39,10 @@ npm ci
 npm run dev
 ```
 
-## GitHub Pages
+## GitHub Pages build
 
-The workflow in `.github/workflows/deploy-pages.yml` builds the static version
-and publishes it through GitHub Pages whenever the `main` branch changes.
+```bash
+npm run build:pages
+```
+
+This command creates the static production files in `github-pages-dist`.
